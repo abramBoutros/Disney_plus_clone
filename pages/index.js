@@ -2,7 +2,6 @@ import { gql, GraphQLClient } from "graphql-request";
 
 import Section from "../components/Section";
 import Navbar from "../components/Navbar";
-import Link from "next/link";
 
 export const getStaticProps = async () => {
 	const url = process.env.ENDPOINT;
@@ -61,7 +60,7 @@ export default function Home({ videos, account }) {
 	const genRandomVideo = () => {
 		return videos[Math.floor(Math.random() * videos.length)];
 	};
-	const randomVideo = genRandomVideo(videos);
+	// const randomVideo = genRandomVideo(videos);
 
 	const filterVideos = (videos, genre) => {
 		return videos.filter((video) => video.tags.includes(genre));
