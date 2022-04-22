@@ -2,7 +2,7 @@
   "name": "disney-clone",
   "version": "0.1.0",
   "private": true,
-  "main": "index.js", 
+  "main": "./pages/index.js", 
   "scripts": {
     "dev": "next dev",
     "build": "next build",
